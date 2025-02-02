@@ -15,7 +15,7 @@ mongoose.connect(process.env.DB_URL).then(() => console.log("DB connected succes
 });
 
 app.use(cors({
-    origin: "http://localhost:5173",  
+    origin: ["http://localhost:5173", "https://chat-bot-omega-six.vercel.app/"],
     methods: ["GET", "POST","PUT","PATCH","DELETE"],        
     allowedHeaders: [
         "Content-Type",
