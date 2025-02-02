@@ -14,6 +14,11 @@ mongoose.connect(process.env.DB_URL).then(() => console.log("DB connected succes
     process.exit(1);
 });
 
+
+app.get("/", (req, res) => {
+    res.send("Backend is working!");  
+  });
+
 app.use(cors({
     origin: ["http://localhost:5173","https://chat-bot-frontend-rho.vercel.app"],
     methods: ["GET", "POST","PUT","PATCH","DELETE"],        
@@ -27,7 +32,7 @@ app.use(cors({
     credentials: true, 
 }));
 app.use(express.json());
-const PORT = process.env.PORT||5001;
+const PORT = process.env.PORT||5000;
 
 
 app.use("/api",UserRouter)
