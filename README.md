@@ -1,39 +1,100 @@
-# build-full-stack-book-store-mern-app
-![full-stack-book-store-mern-project](/frontend/src/assets/github-cover.png)
+# BeyondChats Chatbot Setup Assignment
 
-## How to run this project:
+## **Project Overview**
 
-### For Frontend 
-Follow the below steps to run the project: 
-- Firstly clone or unzip the project folder.
-* Go to the frontend directory by using the following command ``` cd frontend ```.
-* * create a **.env.local** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there:
-```
->>> Stepup firebase app and configure the environment
+This project implements the UI/UX for a step-by-step chatbot setup workflow for BeyondChats, a chatbot company. The interface is designed to be responsive, intuitive, and visually appealing, focusing on delivering a great user experience across desktop and mobile.
 
-VITE_API_KEY="AIzaSyCXvDIC4MPrkaMdeg_O2iij88wLpfj3qBA"
-VITE_Auth_Domain="book-store-mern-app.firebaseapp.com"
-VITE_PROJECT_ID="book-store-mern-app"
-VITE_STORAGE_BUCKET="book-store-mern-app.appspot.com"
-VITE_MESSAGING_SENDERID= "205632822247"
-VITE_APPID="1:205632822247:web:b0db0ec66bf6de0bbb3b42"
-```
-+ Then run `` npm install `` commend to install node dependencies.
-- Finally, to run the project, use ``npm run dev`` command.
+---
+
+## **Live Demo**
+
+[View the Live Demo Here](https://chat-bot-frontend-rho.vercel.app)
+
+---
+
+## **Features**
+
+### **User Registration**
+
+- User can enter their name, email, and password.
+- "Continue with Google" option for seamless sign-up.
+- Email verification code input to ensure genuine registrations.
+
+### **Setup Organisation**
+
+- User enters company name, website URL, and company description.
+- Bonus: Auto-fetch meta-description from the provided website URL.
+- Display all detected webpages with statuses (scraped, pending).
+- Clickable webpages to view data chunks scraped.
+
+### **Chatbot Integration & Testing**
+
+- **Test Chatbot:** Opens client's website with a dummy chatbot.
+- **Feedback Option:** "Chatbot not working as intended? Share feedback" on the top bar.
+- **Integrate on Website:**
+  - Easy-to-follow instructions for embedding code within `<head>`.
+  - Option to mail integration instructions to the client's developer.
+- **Test Integration:**
+  - Confetti UI for successful integration.
+  - "Explore Admin Panel" and "Start Talking to Your Chatbot" buttons.
+  - Social media sharing buttons.
+  - UI for failed integration with retry options.
+
+---
+
+## **Technical Details**
+
+- **Framework:** React.js
+- **Styling:** Tailwind CSS for responsive and modern UI.
+- **Animations:** Framer Motion for smooth transitions.
+- **Routing:** React Router for navigation.
+- **State Management:** React Context API
+
+---
+
+## **Installation Instructions**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/srinumaragada/Chat-Bot.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd backend and cd frontend
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the app in your browser at [http://localhost:3000](http://localhost:3000)
+
+---
 
 
-### For Backend
-Follow the below steps to run the project: 
-- Firstly clone or unzip the project folder.
-* Go to the backend directory by using the following command ``` cd backend```.
-+ Then run `` npm install `` commend to install node dependencies.
-* create a **.env** file in the backend root directory as the same level where the **package.json** is located and keep the following environment variables there: 
-```
-DB_URL = "mongodb+srv://helpyourassistant:pqam0Mwv3Vwv8Off@cluster0.qc3bq.mongodb.net/book-store?retryWrites=true&w=majority&appName=Cluster0"
 
-JWT_SECRET_KEY = 'bc992a20cb6706f741433686be814e3df45e57ea1c2fc85f9dbb0ef7df12308a669bfa7c976368ff32e32f6541480ce9ec1b122242f9b1257ab669026aeaf16'
+## **Future Improvements**
 
-Note: Please setup mongodb and change the MongoDB url and set your jwt secret key above.
-```
+- Enhance chatbot training progress indicators.
+- Integrate backend for real-time data fetching.
+- Add more sophisticated error handling and feedback.
 
-- Finally, to run the project, use ``npm run start:dev`` command.
+---
+
+## **Contact**
+
+If you have any questions, feel free to contact me at  [srinumaraga@gmail.com](mailto\:srinumaraga@gmail.com)
+
+
+
